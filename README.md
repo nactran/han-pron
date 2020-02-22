@@ -1,7 +1,13 @@
-Welcome to Glitch
+Chinese Pronunciation Searcher
 =================
 
-Under developing.  
+Under developing. 
+
+Usage
+------------
+
+`npm install`  
+`npm run server.js`  
 
 This Project
 ------------
