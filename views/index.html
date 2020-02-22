@@ -1,0 +1,66 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <title>漢語發音查詢</title>
+    <meta name="description" content="查詢漢字的反切和中古漢語發音">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class = "wrapper">
+        <header>
+          <h1>
+            漢語發音查詢
+          </h1>
+        </header>
+        <div>
+          <p><span  class="bold">使用方法：</span>在輸入框中輸入一個漢字（繁體中文），並提交。</p><p>支持查詢中古語音（反切、擬音）或各地方音</p>          
+        </div>
+        <form>
+          <div style = "padding:8px">
+            <label><input name="option" type="radio" value="middle" checked>中古語音</label>
+            <label><input name="option" type="radio" value="dialect">各地方音</label>            
+          </div>
+          <input class = "search" name="dream" type="text" maxlength="100" placeholder="在此處輸入欲查詢的漢字" aria-labelledby="submit-dream">
+          <div style = "text-align:right">
+             <button type="submit" id="submit-dream">提交</button>
+          </div>
+        </form> 
+    <footer>
+      <p>
+        Made By <a href="https://github.com/yiruka114514">Plevium Chen</a> with <a href="https://glitch.com">Glitch</a>!
+      </p>
+      <p>
+        Modified original content from <a href = "https://www.wiktionary.org/">Wiktionary.</a>
+      </p>
+      <p>
+        Content is available under the <a href = "https://creativecommons.org/licenses/by-sa/3.0/us/">CC BY-SA 3.0 License.</a>
+      </p>
+    </footer>
+      </div>
+    </main>
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
