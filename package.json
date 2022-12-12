@@ -10,7 +10,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "node-html-parser": "^1.2.6",
     "axios": "^0.19.2"
   },
